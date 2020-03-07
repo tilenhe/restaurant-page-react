@@ -1,0 +1,13 @@
+.header-style {
+  color: #fff;
+  background-color: #000;
+  list-style-type: none;
+}
+
+.nav-style ul a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px dotted #ccc;
+}
