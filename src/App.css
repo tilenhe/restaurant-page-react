@@ -1,7 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .header-style {
+  padding: 10px;
   color: #fff;
   background-color: #000;
   list-style-type: none;
+  text-align: center;
+}
+.nav-style {
+  margin: 15px ;
 }
 
 .nav-style ul a {
@@ -9,5 +20,44 @@
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px 10px;
-  border: 1px dotted #ccc;
+border: solid 1px #fff;
+border-radius: 10px;
+margin: 0 5px;
+}
+.nav-style ul a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.App {
+  padding: 15px;
+  text-align: center;
+  position: relative;
+    height: 100vh;
+}
+
+
+.App:after {
+  content: "";
+    background-image: url("https://images.pexels.com/photos/262897/pexels-photo-262897.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+@media (max-width: 300px) {
+  .nav-style ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-style ul a {
+    margin: 5px 0;
+    padding: 5px 5px
+  }
 }
